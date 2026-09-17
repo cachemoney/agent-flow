@@ -1,0 +1,1 @@
+../../commands/fm-ingest/command.md

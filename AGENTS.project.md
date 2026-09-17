@@ -1,21 +1,13 @@
-<placeholder>
-Add project-specific instructions here. This content will be merged into AGENTS.md.
+## Agent skills
 
-Remove these `<placeholder>` tags when adding your content.
+### Issue tracker
 
-Example content:
+Issues and specs live in GitHub Issues (managed via `gh` CLI). See `docs/agents/issue-tracker.md`.
 
-## Project Overview
-Brief description of what this project does.
+### Triage labels
 
-## Key Concepts
-- **Term 1** - Definition
-- **Term 2** - Definition
+Triage uses the default five canonical roles (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
 
-## Repository Structure
-- `repositories/component-a/` - Description of component A
-- `repositories/component-b/` - Description of component B
+### Domain docs
 
-## Issue Tracking
-How work is tracked (Jira, GitHub Issues, Linear, etc.)
-</placeholder>
+Single-context layout (`CONTEXT.md` and `docs/adr/` at the repo root). See `docs/agents/domain.md`.

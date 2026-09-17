@@ -1,3 +1,6 @@
 [submodule "repositories/firstmate"]
 	path = repositories/firstmate
 	url = git@github.com:cachemoney/firstmate.git
+[submodule "repositories/matt_skills"]
+	path = repositories/matt_skills
+	url = git@github.com:mattpocock/skills.git

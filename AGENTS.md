@@ -39,6 +39,11 @@ When creating or modifying docs, read [`agent-docs/README.md`](agent-docs/README
 ### Agent Docs
 
 <agent-docs-items>
+<doc path="agent-docs/firstmate-vs-matt-skills.md">
+<name>Firstmate vs. Matt Pocock Skills Workflow Comparison</name>
+<description>Comprehensive guide comparing Firstmate and Matt Pocock's Skills ecosystems. Covers architectural differences, GitHub Issues vs. local backlog, AFK supervision mechanisms, and how to integrate both into a unified multi-agent workflow.</description>
+<when-to-read>When designing or running agent workflows combining Firstmate and Matt Pocock's skills. When deciding how to manage tasks, GitHub Issues, and backlogs across agents. When configuring or utilizing AFK (Away From Keyboard) modes and autonomous agent supervision.</when-to-read>
+</doc>
 <doc path="agent-docs/workspace-development.md">
 <name>Workspace Development Guide</name>
 <description>How to modify, configure, and extend this workspace. Covers configuration, AGENTS.md generation, package management, creating agent-docs/skills/commands, tool discovery, and session hooks.</description>
@@ -53,6 +58,14 @@ In addition to environment-provided capabilities (e.g., tools, MCPs, Skills), th
 - **Documentation** ([`agent-docs/`](agent-docs/)) — AI reads when relevant to tasks
 - **Skills** ([`skills/`](skills/)) — Reusable agent capabilities with scripts and instructions
 - **Commands** ([`commands/`](commands/)) — Human invokes via `/command`; AI receives prompt
+
+<commands-section>
+## Commands
+
+The [`commands/`](commands/) directory contains cross-tool AI commands invoked by humans via `/command` syntax. Commands are distributed to IDE command directories via [`.ai-workspace/scripts/transpile-commands.py`](.ai-workspace/scripts/transpile-commands.py).
+
+When creating or modifying commands, read [`commands/README.md`](commands/README.md) first.
+</commands-section>
 
 ## Configuration
 
@@ -176,3 +189,19 @@ git push origin <branch-name>      # Just push the submodule now
 # Parent reference is already correct, no additional action needed
 ```
 
+
+<project-context>
+## Agent skills
+
+### Issue tracker
+
+Issues and specs live in GitHub Issues (managed via `gh` CLI). See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Triage uses the default five canonical roles (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout (`CONTEXT.md` and `docs/adr/` at the repo root). See `docs/agents/domain.md`.
+</project-context>

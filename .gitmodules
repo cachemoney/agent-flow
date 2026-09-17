@@ -1,0 +1,3 @@
+[submodule "repositories/firstmate"]
+	path = repositories/firstmate
+	url = git@github.com:cachemoney/firstmate.git
